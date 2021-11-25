@@ -1,8 +1,8 @@
 //
 //  main.c
-//  ft_print_comb
+//  deneme
 //
-//  Created by Gorkem Sever on 11/25/21.
+//  Created by Gorkem Sever on 11/24/21.
 //
 
 #include <stdio.h>

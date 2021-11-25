@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BCBC2783274F0F9000163D9A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BCBC2782274F0F9000163D9A /* main.c */; };
+		BC64C94E274FD4BC009BCD6C /* ft_print_comb2.c in Sources */ = {isa = PBXBuildFile; fileRef = BC64C94D274FD4BC009BCD6C /* ft_print_comb2.c */; };
+		BCBC2783274F0F9000163D9A /* ft_print_comb2.c in Sources */ = {isa = PBXBuildFile; fileRef = BCBC2782274F0F9000163D9A /* ft_print_comb2.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC64C94C274FD4BC009BCD6C /* ft_print_comb2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ft_print_comb2.h; path = ../XCode_C/ft_print_comb2.h; sourceTree = "<group>"; };
+		BC64C94D274FD4BC009BCD6C /* ft_print_comb2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = ft_print_comb2.c; path = ../XCode_C/ft_print_comb2.c; sourceTree = "<group>"; };
 		BCBC277F274F0F9000163D9A /* ft_print_comb */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ft_print_comb; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCBC2782274F0F9000163D9A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		BCBC2782274F0F9000163D9A /* ft_print_comb2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ft_print_comb2.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,8 @@
 		BCBC2776274F0F8F00163D9A = {
 			isa = PBXGroup;
 			children = (
+				BC64C94C274FD4BC009BCD6C /* ft_print_comb2.h */,
+				BC64C94D274FD4BC009BCD6C /* ft_print_comb2.c */,
 				BCBC2781274F0F9000163D9A /* ft_print_comb */,
 				BCBC2780274F0F9000163D9A /* Products */,
 			);
@@ -57,7 +62,7 @@
 		BCBC2781274F0F9000163D9A /* ft_print_comb */ = {
 			isa = PBXGroup;
 			children = (
-				BCBC2782274F0F9000163D9A /* main.c */,
+				BCBC2782274F0F9000163D9A /* ft_print_comb2.c */,
 			);
 			path = ft_print_comb;
 			sourceTree = "<group>";
@@ -118,7 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCBC2783274F0F9000163D9A /* main.c in Sources */,
+				BCBC2783274F0F9000163D9A /* ft_print_comb2.c in Sources */,
+				BC64C94E274FD4BC009BCD6C /* ft_print_comb2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

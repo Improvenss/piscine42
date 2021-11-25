@@ -39,6 +39,14 @@ tar -cf (dosya ismi).tar (dosya ismi): çalışma bittikten sonra dosyayı tarat
 ln -s /test0 test6: test6 dosyasını test0 klasörüne bağlamak için kullandığımız komut.
 	NOT: "ln -s test0 test6" yaparsak test0 klasörüne test6 (klasörünü) oluşturmuş oluyoruz.
 ---------------------
+patch ./a -o ./b < sw.diff: 
+---------------------
+git status --ignored -s | grep '!!' | cut -f 2 -d' ':
+	"--ignored": Dışlanmış yok sayılmış dosyaları göstermesi için.
+		"-s": İstenilen dosyalara "??" koy, istenmeyen dosyalara "!!" koy.
+--------------------
+xattr -c (dosya ismi): 2 kere tıklanarak açılan dosyaları ls -la olarak göstermek istediğimizde @ işareti oluyor izinler kısmında, o "@" işaretini kaldırmak için kullanıyoruz.
+---------------------
 git init: github deponun konumunu belirliyoruz. Kısacası GIT dizini oluştutuyor.
 ---------------------
 git status: Dosyalarının o anki durumu hakkında bilgi verir. Eğer değiştirilmiş dosya falan varsa onları gösterir.

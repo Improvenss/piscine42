@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush00.c                                           :+:      :+:    :+:   */
+/*   rush04.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsoysal <tsoysal@42kocaeli.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 15:25:08 by tsoysal           #+#    #+#             */
-/*   Updated: 2021/11/28 16:51:42 by gsever           ###   ########.fr       */
+/*   Updated: 2021/11/28 16:48:26 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@ void	first_line(int x, int y)
 	n = 0;
 	while (n < x)
 	{
-		if (n == 0 || n == x - 1)
-			ft_putchar('o');
+		if (n == 0)
+			ft_putchar('A');
+		else if (n == x - 1)
+			ft_putchar('C');
 		else
-			ft_putchar('-');
+			ft_putchar('B');
 		n++;
 	}
 	ft_putchar('\n');
@@ -43,7 +45,7 @@ void	middle_lines(int x, int y)
 			while (n < x)
 			{
 				if (n == 0 || n == x - 1)
-					ft_putchar('|');
+					ft_putchar('B');
 				else
 					ft_putchar(' ');
 				n++;
@@ -65,10 +67,12 @@ void	last_line(int x, int y)
 	{
 		while (n < x)
 		{
-			if (n == 0 || n == x - 1)
-				ft_putchar('o');
+			if (n == 0)
+				ft_putchar('C');
+			else if (n == x - 1)
+				ft_putchar('A');
 			else
-				ft_putchar('-');
+				ft_putchar('B');
 			n++;
 		}
 		ft_putchar('\n');

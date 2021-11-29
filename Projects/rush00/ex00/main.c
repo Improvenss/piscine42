@@ -1,11 +1,19 @@
-#include <unistd.h>
-#include <ft_putchar.c>
-#include <rush00.c>
-#include <rush01.c>
-#include <rush02.c>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tsoysal <tsoysal@42kocaeli.com>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/27 15:31:09 by tsoysal           #+#    #+#             */
+/*   Updated: 2021/11/28 17:24:03 by gsever           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int	main()
+void	rush(int x, int y);
+
+int	main(void)
 {
-	rush(5, 5);
-	return(0);
+	rush(5, 3);
+	return (0);
 }

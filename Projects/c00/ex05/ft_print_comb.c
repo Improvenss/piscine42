@@ -6,11 +6,19 @@
 /*   By: gsever <gsever@student.42kocaeli.com.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 05:30:47 by gsever            #+#    #+#             */
-/*   Updated: 2021/11/25 05:48:13 by gsever           ###   ########.fr       */
+/*   Updated: 2021/11/29 16:38:31 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_finish(char dig_hund, char dig_ten, char dig_one)
+{
+	if (dig_hund == '7' && dig_ten == '8' && dig_one == '9')
+		write(1, "", 1);
+	else
+		write(1, ", ", 2);
+}
 
 void	ft_print_comb(void)
 {
@@ -22,19 +30,19 @@ void	ft_print_comb(void)
 	while (dig_hund <= '7')
 	{
 		dig_ten = dig_hund + 1;
-		dig_hund++;
 		while (dig_ten <= '8')
 		{
 			dig_one = dig_ten + 1;
-			dig_ten++;
 			while (dig_one <= '9')
 			{
 				write(1, &dig_hund, 1);
 				write(1, &dig_ten, 1);
 				write(1, &dig_one, 1);
-				write(1, ", ", 2);
+				ft_finish(dig_hund, dig_ten, dig_one);
 				dig_one++;
 			}
+			dig_ten++;
 		}
+		dig_hund++;
 	}
 }

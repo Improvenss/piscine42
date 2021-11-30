@@ -63,7 +63,7 @@ void	ft_print_combn(int n)
     {
         ft_doublex(n);
     }
-    else //tek sayılar da burada olacak
+    else if(n  )//tek sayılar da burada olacak
     {
         ft_thirdx(n);
     }
@@ -71,5 +71,5 @@ void	ft_print_combn(int n)
 
 int main(void)
 {
-    ft_print_combn(1);
+    ft_print_combn(6);
 }

@@ -6,7 +6,7 @@
 /*   By: gsever <gsever@student.42kocaeli.com.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 05:30:47 by gsever            #+#    #+#             */
-/*   Updated: 2021/11/29 16:38:31 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/01 11:53:27 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_finish(char dig_hund, char dig_ten, char dig_one)
 {
 	if (dig_hund == '7' && dig_ten == '8' && dig_one == '9')
-		write(1, "", 1);
+		return ;
 	else
 		write(1, ", ", 2);
 }
@@ -45,4 +45,9 @@ void	ft_print_comb(void)
 		}
 		dig_hund++;
 	}
+}
+
+int	main(void)
+{
+	ft_print_comb();
 }

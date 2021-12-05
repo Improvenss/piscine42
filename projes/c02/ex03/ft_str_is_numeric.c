@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 19:51:17 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/05 23:25:52 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/05 23:26:58 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/05 23:37:55 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_str_is_alpha(char *str)
 		return (1);
 	while(str[i] != '\0')
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
+		if (str[i] >= '0' && str[i] <= '9')
 			i++;
 		else
 			return (0);
@@ -32,5 +32,5 @@ int	ft_str_is_alpha(char *str)
 
 int	main(void)
 {
-	printf("%d", ft_str_is_alpha("4534"));
+	printf("%d", ft_str_is_alpha("!'^+%&/'"));
 }

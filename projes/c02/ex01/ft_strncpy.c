@@ -6,7 +6,7 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 17:50:55 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/05 17:51:15 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/05 23:17:52 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	while (i < n)
 	{
-		dest[i] = 'd';
+		dest[i] = '\0';
 		i++;
 	}
 	return (dest);

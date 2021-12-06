@@ -1,14 +1,23 @@
-#include <stdio.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/06 16:05:56 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/06 16:07:29 by gsever           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_lowercase(char *str)
 {
 	int	i;
 
 	i = 0;
 	if (str[i] == '\0')
 		return (1);
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		if (str[i] >= 'a' && str[i] <= 'z')
 			i++;
@@ -16,9 +25,4 @@ int	ft_str_is_alpha(char *str)
 			return (0);
 	}
 	return (1);
-}
-
-int	main(void)
-{
-	printf("%d", ft_str_is_alpha("sdfjDDDDDDt"));
 }

@@ -1,29 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 17:50:55 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/06 15:35:01 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/05 23:45:10 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/05 23:50:43 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+#include <stdio.h>
+#include <string.h>
+
+int	ft_str_is_uppercase(char *str)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (src[i] != '\0' && i < n)
+	if (str[i] == '\0')
+	return (1);
+	while(str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		i++;
+		else
+			return (0);
 	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
+	return (1);
+}
+
+int	main(void)
+{
+	printf("%d", ft_str_is_uppercase("hEFEFegg"));
 }

@@ -1,29 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/05 17:50:55 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/06 15:35:01 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/06 17:04:09 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/06 17:04:39 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strlowcase(char *str)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	while (src[i] != '\0' && i < n)
+	while (str[i] != '\0')
 	{
-		dest[i] = src[i];
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
 		i++;
 	}
-	while (i < n)
+	return (str);
+}
+
+char	*ft_strcapitalize(char *str)
+{
+	int		i;
+	int		i1;
+
+	i = 0;
+	i1 = 1;
+	ft_strlowcase(str);
+	while (str[i] != '\0')
 	{
-		dest[i] = '\0';
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			if (i1 == 1)
+				str[i] -= 32;
+				i1 = 0;
+		}
+		else if (str[i] >= '0' && str[i] <= '9')
+			i1 = 0;
+		else
+			i1 = 1;
 		i++;
 	}
-	return (dest);
+	return (str);
 }

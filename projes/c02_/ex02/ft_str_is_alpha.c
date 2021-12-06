@@ -6,12 +6,9 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 19:51:17 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/05 23:25:52 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/06 15:59:23 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
 
 int	ft_str_is_alpha(char *str)
 {
@@ -20,17 +17,11 @@ int	ft_str_is_alpha(char *str)
 	i = 0;
 	if (str[i] == '\0')
 		return (1);
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z'))
-			i++;
-		else
+		if ((str[i] < 'A') || (str[i] > 'Z' && str[i] < 'a') || (str[i] > 'z'))
 			return (0);
+		i++;
 	}
 	return (1);
-}
-
-int	main(void)
-{
-	printf("%d", ft_str_is_alpha("4534"));
 }

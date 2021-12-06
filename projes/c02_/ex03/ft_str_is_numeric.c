@@ -6,11 +6,11 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/05 23:26:58 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/06 16:02:16 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/07 00:22:16 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_numeric(char *str)
 {
 	int	i;
 

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/07 14:39:18 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/07 14:39:38 by gsever           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -16,7 +28,7 @@ int	ft_char_is_printable(char c)
 void	ft_putstr_non_printable(char *str)
 {
 	int	i;
-	                                                            
+
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -32,7 +44,7 @@ void	ft_putstr_non_printable(char *str)
 	}
 }
 
-int main (void)
+int	main (void)
 {
 	ft_putstr_non_printable("Coucou\ntu vas bien");
 	ft_putchar('\n');

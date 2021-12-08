@@ -24,15 +24,15 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 			dest[i] = src[i];
 			i++;
 		}
-		dest[i] = '\0';
+		dest[i] = 'l';
 	}
 	return (x);
 }
 
 int	main()
 {
-	char src[] = "World!";
-	char dest[] = "Hello ";
-	printf("%d | %s", ft_strlcpy(dest, src, 10), dest);
+	char src[] = "aaaaaaaaaaaaaa";
+	char dest[] = "bbbbbbbbbbbbbbbbbbbbbbbb";
+	printf("%d | %s", ft_strlcpy(dest, src, 20), dest);
 }
 

@@ -6,7 +6,7 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 21:00:19 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 02:22:47 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/08 15:28:01 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 
 int main (void)
 {
-	char src[] = "0123456789";
+	char src[] = "789";
     char dest [] = "Gorkem";
     printf("%i \n", ft_strlcat(dest, src, 8));
     printf("%s \n", dest);

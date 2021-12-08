@@ -6,12 +6,12 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 15:42:42 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 02:19:59 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/08 15:29:40 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-
+//Aralarındaki farkın DECIMAL değerlerine göre çıktısını veriyor.
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;

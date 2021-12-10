@@ -31,5 +31,5 @@ int	main()
 	printf("%d", ft_strcmp("0", "0\n"));//-10
 	printf("\n%d", ft_strcmp("", "A"));//-65
 	printf("\n%d", ft_strcmp("He", "Hello"));//-327
-	printf("\n%d", ft_strcmp("Hello", "Hello"));
+	printf("\n%d", ft_strcmp("Hello", "Hello"))//0
 }

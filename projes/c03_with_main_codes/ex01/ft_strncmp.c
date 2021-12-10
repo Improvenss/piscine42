@@ -6,7 +6,7 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 20:59:40 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 15:37:18 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/11 01:46:33 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 
 int	main()
 {
-	printf("%dfirst\n", ft_strncmp("ben gorkem sever boyum 110.", "sever", 6));
+	printf("%dfirst\n", ft_strncmp("222", "22", 3));
 }

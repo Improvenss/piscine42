@@ -6,11 +6,9 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 21:00:19 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/09 00:57:57 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/10 23:14:43 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -38,16 +36,4 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 			*dest++ = src[j];
 	*dest = '\0';
 	return (i + j);
-}
-
-int main (void)
-{
-	char src[] = "789";
-    char dest [] = "Gorkem";
-	unsigned int size = 9;
-	unsigned int result;
-	printf("-----\ndest = %s\nsrc = %s\nnb = %d\n\n", dest, src, size);
-	result = ft_strlcat(dest, src, size);
-	printf("dest (cat) = %s\nresult = %d\n-----\n", dest, result);
-	return (0);
 }

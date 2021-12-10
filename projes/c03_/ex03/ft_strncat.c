@@ -6,12 +6,10 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 21:00:10 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 02:21:27 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/11 00:54:31 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-//Dest'in üstüne yine src'yi ekliyoruz ama istediğimiz değer (int nb) kadar ekliyoruz.
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	i;
@@ -28,11 +26,4 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	}
 	dest[i + j] = '\0';
 	return (dest);
-}
-
-int	main()
-{
-	char src[] = "Gorkem7890123456789";
-	char dest[] = "Sonmez";
-	printf("%s", ft_strncat(dest, src, 9));
 }

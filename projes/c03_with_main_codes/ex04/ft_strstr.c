@@ -6,7 +6,7 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 21:00:15 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 02:21:48 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/11 01:55:33 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ char	*ft_strstr(char *str, char *tofind)
 int	main()
 {
 	char str[] = "42 1337 Network 2021 piscine Benguerir Khouribga";
-	char find[] = "piscine";
+	char find[] = "pise";
 	printf("%s", ft_strstr(str, find));
 }

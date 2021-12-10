@@ -6,12 +6,10 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 20:59:46 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 02:21:00 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/11 00:54:01 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-//Burada dest'in üstüne src'yi ekliyoruz. Yani SonmezReis olacak çıktımız. 
 char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
@@ -28,11 +26,4 @@ char	*ft_strcat(char *dest, char *src)
 	}
 	dest[i + j] = '\0';
 	return (dest);
-}
-
-int	main()
-{
-	char src[] = "Reis";
-	char dest[] = "Sonmez";
-	printf("%s", ft_strcat(dest, src));
 }

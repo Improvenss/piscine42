@@ -6,12 +6,9 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 20:59:40 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 15:37:18 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/10 23:06:28 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
@@ -27,9 +24,4 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	return (0);
-}
-
-int	main()
-{
-	printf("%dfirst\n", ft_strncmp("ben gorkem sever boyum 110.", "sever", 6));
 }

@@ -6,12 +6,12 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 17:11:13 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/09 00:34:55 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/12 19:13:32 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-//Sentence starting \n, \t, \v=(vertical tab), \r=(carriage return) and space.
+
 int	whitespaces(char *str, int *ptr_i)
 {
 	int	count;
@@ -50,6 +50,7 @@ int	ft_atoi(char *str)
 /*
 int main(void)
 {
-	char *s = "  ---+--+01234506789ab0123";
+	char *s = "  ---+--+01234 4ab0123";
 	printf("%d", ft_atoi(s));
-}*/
+}
+*/

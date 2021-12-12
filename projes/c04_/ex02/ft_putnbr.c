@@ -6,7 +6,7 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 17:11:12 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 23:36:03 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/11 15:59:03 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,3 @@ void	ft_putnbr(int nb)
 	else
 		ft_putchar(nb + 48);
 }
-/*
-int main (void)
-{
-	ft_putnbr(42);
-}*/

@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/08 17:11:11 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/11 16:19:37 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/12 16:22:19 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/12 16:28:02 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-void	ft_putstr(char *str)
+int	ft_iterative_power(int nb, int power)
 {
-	int	i;
+	int	result;
 
-	i = 0;
-	while (str[i] != '\0')
+	result = nb;
+	while (power > 1)
 	{
-		write (1, &str[i], 1);
-		i++;
+		result *= nb;
+		power--;
 	}
+	if (power == 0)
+		return (1);
+	if (power < 0)
+		return (0);
+	return (result);
 }
+/*
+int	main(void)
+{
+	printf("%i", ft_iterative_power(3, 2));
+}
+*/

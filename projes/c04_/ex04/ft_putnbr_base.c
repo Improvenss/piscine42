@@ -6,7 +6,7 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 17:11:15 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 23:56:22 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/12 19:32:55 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,12 +82,13 @@ void	ft_putnbr_base(int nbr, char *base)
 /*
 int	main(void)
 {
-	ft_putnbr_base(-12, "01");//2lik
+	ft_putnbr_base(73, "01");
 	printf(" = 2lik\n");
-	ft_putnbr_base(8, "poneyvif");//8lik
+	ft_putnbr_base(73, "poneyvif");
 	printf(" = 8lik\n");
-	ft_putnbr_base(894867, "0123456789");//10luk
+	ft_putnbr_base(73, "0123456789");
 	printf(" = 10luk\n");
-	ft_putnbr_base(53, "0123456789abcdef");//16lik
+	ft_putnbr_base(73, "0123456789abcdef");
 	printf(" = 16lik");
-}*/
+}
+*/

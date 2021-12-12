@@ -6,11 +6,9 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/08 16:44:24 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/08 23:27:29 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/11 15:58:40 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -23,8 +21,3 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-/*
-int	main(void)
-{
-	printf("%i", ft_strlen("Gorkem"));
-}*/

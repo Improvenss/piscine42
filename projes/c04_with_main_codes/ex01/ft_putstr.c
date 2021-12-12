@@ -1,39 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   last_word.c                                        :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/09 14:48:17 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/11 19:32:53 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/08 17:11:11 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/08 17:13:35 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
-int		main(int ac, char **av)
+void	ft_putstr(char *str)
 {
-	int i;
-	char *lw;
+	int	i;
 
 	i = 0;
-	if (ac == 2)
+	while (str[i] != '\0')
 	{
-		while (av[1][i] != '\0')
-		{
-			if (av[1][i] <= 32 && av[1][i + 1] > 32)
-				lw = &av[1][i + 1];
-			i++;
-		}
-		i = 0;
-		while (lw && lw[i] > 32)
-		{
-			write(1, &lw[i], 1);
-			i++;
-		}
+		write (1, &str[i], 1);
+		i++;
 	}
-	write(1, "\n", 1);
-	return (0);
 }
-
+/*
+ int main()
+ {
+ 	ft_putstr("Hello World!");
+ }
+ */

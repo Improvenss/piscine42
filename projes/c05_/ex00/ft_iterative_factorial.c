@@ -1,39 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   last_word.c                                        :+:      :+:    :+:   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/09 14:48:17 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/11 19:32:53 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/12 02:40:24 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/12 03:45:00 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-int		main(int ac, char **av)
+int	ft_calculate(int value)
 {
-	int i;
-	char *lw;
+	unsigned int	result;
 
-	i = 0;
-	if (ac == 2)
+	result = 1;
+	while (value > 0)
 	{
-		while (av[1][i] != '\0')
-		{
-			if (av[1][i] <= 32 && av[1][i + 1] > 32)
-				lw = &av[1][i + 1];
-			i++;
-		}
-		i = 0;
-		while (lw && lw[i] > 32)
-		{
-			write(1, &lw[i], 1);
-			i++;
-		}
+		result = result * value;
+		value--;
 	}
-	write(1, "\n", 1);
-	return (0);
+	return (result);
 }
 
+int	ft_iterative_factorial(int nb)
+{
+	if (nb == 0)
+		return (1);
+	else if (nb < 0)
+		return (0);
+	else
+		return (ft_calculate(nb));
+}
+/*
+int	main(void)
+{
+	printf("%d", ft_iterative_factorial(100));
+}
+*/

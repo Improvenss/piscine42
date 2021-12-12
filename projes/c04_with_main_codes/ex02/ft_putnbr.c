@@ -1,39 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   last_word.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/09 14:48:17 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/11 19:32:53 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/08 17:11:12 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/08 23:36:03 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int		main(int ac, char **av)
+void	ft_putchar(char x)
 {
-	int i;
-	char *lw;
-
-	i = 0;
-	if (ac == 2)
-	{
-		while (av[1][i] != '\0')
-		{
-			if (av[1][i] <= 32 && av[1][i + 1] > 32)
-				lw = &av[1][i + 1];
-			i++;
-		}
-		i = 0;
-		while (lw && lw[i] > 32)
-		{
-			write(1, &lw[i], 1);
-			i++;
-		}
-	}
-	write(1, "\n", 1);
-	return (0);
+	write(1, &x, 1);
 }
 
+void	ft_putnbr(int nb)
+{
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return ;
+	}
+	if (nb < 0)
+	{
+		ft_putchar('-');
+		nb = -nb;
+	}
+	if (nb > 9)
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	else
+		ft_putchar(nb + 48);
+}
+/*
+int main (void)
+{
+	ft_putnbr(42);
+}*/

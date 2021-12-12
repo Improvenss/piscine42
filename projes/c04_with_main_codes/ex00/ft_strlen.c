@@ -1,39 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   last_word.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/09 14:48:17 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/11 19:32:53 by gsever           ###   ########.fr       */
+/*   Created: 2021/12/08 16:44:24 by gsever            #+#    #+#             */
+/*   Updated: 2021/12/08 23:27:29 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdio.h>
 
-int		main(int ac, char **av)
+int	ft_strlen(char *str)
 {
-	int i;
-	char *lw;
+	int	i;
 
 	i = 0;
-	if (ac == 2)
+	while (str[i] != '\0')
 	{
-		while (av[1][i] != '\0')
-		{
-			if (av[1][i] <= 32 && av[1][i + 1] > 32)
-				lw = &av[1][i + 1];
-			i++;
-		}
-		i = 0;
-		while (lw && lw[i] > 32)
-		{
-			write(1, &lw[i], 1);
-			i++;
-		}
+		i++;
 	}
-	write(1, "\n", 1);
-	return (0);
+	return (i);
 }
-
+/*
+int	main(void)
+{
+	printf("%i", ft_strlen("Gorkem"));
+}*/

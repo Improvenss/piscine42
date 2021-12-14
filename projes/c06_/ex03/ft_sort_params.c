@@ -6,17 +6,17 @@
 /*   By: gsever <gsever@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 22:59:16 by gsever            #+#    #+#             */
-/*   Updated: 2021/12/14 03:31:43 by gsever           ###   ########.fr       */
+/*   Updated: 2021/12/14 13:50:01 by gsever           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-//:D
+
 void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }
-//Writing console but full string size
+
 void	ft_putstr(char *str)
 {
 	int	i;
@@ -54,6 +54,7 @@ int	main(int argc, char **argv)
 {
 	int		j;
 	int		x;
+
 	x = 1;
 	while (x < argc - 1)
 	{

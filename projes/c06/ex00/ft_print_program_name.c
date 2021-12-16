@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-
+char *ft_print_program_name(int ac, char **av)
+{
+    
+}
 int	main(int ac, char **av)
 {
 	int	i;

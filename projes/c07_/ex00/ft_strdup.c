@@ -41,7 +41,7 @@ char	*ft_strdup(char *src)
 int main()
 {
 	int i = 0;
-	char *a = ft_strdup("fatih");
+	char *a = ft_strdup("gorkem");
 	while (i < 20)
 	{
 		printf("%c", a[i]);
